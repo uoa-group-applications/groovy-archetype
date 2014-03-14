@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>nz.ac.auckland</groupId>
+		<artifactId>uoa-groovy-parent</artifactId>
+		<version>3.12</version>
+	</parent>
+	<groupId>${groupId}</groupId>
+	<artifactId>${artifactId}</artifactId>
+	<version>${version}</version>
+	<packaging>jar</packaging>
+	<name>${artifactId}</name>
+
+	<properties>
+		<default.repo>UoA.ITSS.GrpApps/CHANGEME</default.repo>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>nz.ac.auckland.composite</groupId>
+			<artifactId>composite-s3-base</artifactId>
+			<version>[1.4,)</version>
+		</dependency>
+
+		<dependency>
+			<groupId>nz.ac.auckland.common</groupId>
+			<artifactId>common-testrunner</artifactId>
+			<version>[1,)</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>
